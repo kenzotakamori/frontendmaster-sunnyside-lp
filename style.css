@@ -23,6 +23,7 @@ body {
 }
 
 header {
+  width: 100%;
   align-items: center;
   position: absolute;
   top: 0;
@@ -31,19 +32,50 @@ header {
 header .wrapper {
   width: 1440px;
   display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 2rem 3rem;
 }
 header nav {
   margin-left: auto;
 }
+header nav a {
+  color: white;
+  padding-right: 3rem;
+  text-decoration: none;
+}
+header button {
+  height: 3rem;
+  width: 7rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  border: none;
+}
+header button a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
 
 div.intro {
   width: 100%;
+  position: relative;
+  z-index: -1;
 }
 div.intro img {
   width: 100%;
 }
-div.intro h2 {
+div.intro h1 {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 0.5rem;
   color: white;
+  top: 20%;
+  width: 100%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
