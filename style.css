@@ -4,6 +4,46 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+}
+
+h1, h2 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+
+html {
+  display: grid;
+  place-items: center;
+}
+
+body {
+  width: 1440px;
+}
+
+header {
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+header .wrapper {
+  width: 1440px;
+  display: flex;
+}
+header nav {
+  margin-left: auto;
+}
+
+div.intro {
+  width: 100%;
+}
+div.intro img {
+  width: 100%;
+}
+div.intro h2 {
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
