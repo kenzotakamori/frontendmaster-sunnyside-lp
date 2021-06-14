@@ -78,4 +78,53 @@ div.intro h1 {
   text-align: center;
 }
 
+article h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+article p {
+  line-height: 2rem;
+}
+
+section#sunnyside-culture {
+  margin-top: -3px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+section#sunnyside-culture article#brand-transformation, section#sunnyside-culture article#highlight {
+  align-self: center;
+  width: 56%;
+  margin: auto;
+}
+section#sunnyside-culture article#brand-transformation h2, section#sunnyside-culture article#highlight h2 {
+  font-size: 2.5rem;
+}
+section#sunnyside-culture article#brand-transformation p, section#sunnyside-culture article#highlight p {
+  color: #5a636c;
+  margin-bottom: 2rem;
+}
+section#sunnyside-culture article#brand-transformation a, section#sunnyside-culture article#highlight a {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+section#sunnyside-culture article#graphic-design, section#sunnyside-culture article#photography {
+  position: relative;
+}
+section#sunnyside-culture article#graphic-design .article-text, section#sunnyside-culture article#photography .article-text {
+  position: absolute;
+  width: 47%;
+  text-align: center;
+  top: 65%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section#sunnyside-culture article#graphic-design {
+  color: #25564b;
+}
+section#sunnyside-culture article#photography {
+  color: #19536b;
+}
+
 /*# sourceMappingURL=style.css.map */
