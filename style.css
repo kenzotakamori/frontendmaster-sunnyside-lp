@@ -63,6 +63,22 @@ header button a {
   font-family: "Fraunces", serif;
   font-weight: 900;
 }
+header .hamburger-menu {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  header .wrapper {
+    width: 375px;
+    padding: 2rem 1.5rem;
+  }
+  header .hamburger-menu {
+    margin-left: auto;
+    display: block;
+  }
+  header nav, header button {
+    display: none;
+  }
+}
 
 div.intro {
   width: 100%;
@@ -123,6 +139,25 @@ section#sunnyside-culture article#brand-transformation a, section#sunnyside-cult
   font-family: "Fraunces", serif;
   font-weight: 900;
   text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+section#sunnyside-culture article#brand-transformation a:after, section#sunnyside-culture article#highlight a:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 0.5rem;
+  width: 8rem;
+  top: 70%;
+  left: -5%;
+  border-radius: 0.25rem;
+  opacity: 0.3;
+}
+section#sunnyside-culture article#brand-transformation a:after {
+  background-color: #fad400;
+}
+section#sunnyside-culture article#highlight a:after {
+  background-color: #fe7867;
 }
 section#sunnyside-culture article#graphic-design, section#sunnyside-culture article#photography {
   position: relative;
