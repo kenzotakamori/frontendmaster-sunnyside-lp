@@ -142,3 +142,55 @@ section#sunnyside-culture {
         color: $dark-blue;
     }
 }
+
+section#client-testimonials {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    h2 {
+        color: $grayish-blue;
+        text-transform: uppercase;
+        letter-spacing: .3rem;
+    }
+    .testimonials-container {
+        display: grid;
+        place-items: center;
+        grid-auto-flow: column;
+        width: 72%;
+        gap: 3rem;
+    }
+    .testimonial {
+        text-align: center;
+        line-height: 2rem;
+        img {
+            width: 6rem;
+            border-radius: 50%;
+            margin-bottom: 3rem;
+        }
+        p {
+            color: $very-dark-grayish-blue;
+        }
+        .client-info {
+            margin-top: 3rem;
+            &_name {
+                color: $very-dark-desaturated-blue;
+                font-family: 'Fraunces', serif;
+                font-weight: 900;
+                font-size: 1.2rem;
+            }
+            &_position {
+                color: $grayish-blue;
+            }
+        }
+    }
+}
+
+section#pictures {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    img {
+        width: 100%;
+        height: auto;
+    }
+}

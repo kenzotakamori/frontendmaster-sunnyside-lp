@@ -127,4 +127,56 @@ section#sunnyside-culture article#photography {
   color: #19536b;
 }
 
+section#client-testimonials {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+section#client-testimonials h2 {
+  color: #a7abae;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+section#client-testimonials .testimonials-container {
+  display: grid;
+  place-items: center;
+  grid-auto-flow: column;
+  width: 72%;
+  gap: 3rem;
+}
+section#client-testimonials .testimonial {
+  text-align: center;
+  line-height: 2rem;
+}
+section#client-testimonials .testimonial img {
+  width: 6rem;
+  border-radius: 50%;
+  margin-bottom: 3rem;
+}
+section#client-testimonials .testimonial p {
+  color: #5a636c;
+}
+section#client-testimonials .testimonial .client-info {
+  margin-top: 3rem;
+}
+section#client-testimonials .testimonial .client-info_name {
+  color: #23303e;
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+section#client-testimonials .testimonial .client-info_position {
+  color: #a7abae;
+}
+
+section#pictures {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+}
+section#pictures img {
+  width: 100%;
+  height: auto;
+}
+
 /*# sourceMappingURL=style.css.map */
