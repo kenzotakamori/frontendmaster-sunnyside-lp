@@ -34,6 +34,9 @@ html {
 
 body {
     width: 1440px;
+    @media screen and (max-width: 800px) {
+        width: 375px;
+    }
 }
 
 header {
@@ -89,6 +92,10 @@ div.intro {
         top: 20%;
         width: 100%;
         text-align: center;
+        @media screen and (max-width: 800px) {
+            font-size: 2.5rem;
+            top: 25%;
+        }
     }
 }
 
@@ -106,6 +113,10 @@ section#sunnyside-culture {
     margin-top: -3px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    img {
+        width: 100%;
+    }
     article#brand-transformation, article#highlight {
         align-self: center;
         width: 56%;
@@ -140,6 +151,26 @@ section#sunnyside-culture {
     }
     article#photography {
         color: $dark-blue;
+    }
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: unset;
+        article#brand-transformation, article#highlight {
+            margin: unset;
+            width: 100%;
+            text-align: center;
+            padding: 4rem 2rem;
+            h2 {
+                font-size: 2rem;
+            }
+        }
+        article#graphic-design, article#photography {
+            .article-text {
+                width: 100%;
+                top: 65%;
+                padding: 0 1rem;
+            }
+        }
     }
 }
 
@@ -183,6 +214,28 @@ section#client-testimonials {
             }
         }
     }
+
+    @media screen and (max-width: 800px) {
+        height: auto;
+        padding: 3rem 2.5rem 5rem;
+        h2 {
+            font-size: 1rem;
+            margin-bottom: 4rem;
+        }
+        .testimonials-container {
+            grid-auto-flow: row;
+            width: 100%;
+            gap: 4rem;
+        }
+        .testimonial { 
+            img {
+                margin-bottom: 1rem;
+            }
+            .client-info {
+                margin-top: 1rem;
+            }
+        }
+    }
 }
 
 section#pictures {
@@ -192,6 +245,10 @@ section#pictures {
     img {
         width: 100%;
         height: auto;
+    }
+
+    @media screen and (max-width: 800px) {
+        grid-template-columns: repeat(2, 50%);
     }
 }
 

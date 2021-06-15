@@ -21,6 +21,11 @@ html {
 body {
   width: 1440px;
 }
+@media screen and (max-width: 800px) {
+  body {
+    width: 375px;
+  }
+}
 
 header {
   width: 100%;
@@ -77,6 +82,12 @@ div.intro h1 {
   width: 100%;
   text-align: center;
 }
+@media screen and (max-width: 800px) {
+  div.intro h1 {
+    font-size: 2.5rem;
+    top: 25%;
+  }
+}
 
 article h2 {
   font-size: 2rem;
@@ -90,6 +101,10 @@ section#sunnyside-culture {
   margin-top: -3px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+section#sunnyside-culture img {
+  width: 100%;
 }
 section#sunnyside-culture article#brand-transformation, section#sunnyside-culture article#highlight {
   align-self: center;
@@ -125,6 +140,25 @@ section#sunnyside-culture article#graphic-design {
 }
 section#sunnyside-culture article#photography {
   color: #19536b;
+}
+@media screen and (max-width: 800px) {
+  section#sunnyside-culture {
+    grid-template-columns: unset;
+  }
+  section#sunnyside-culture article#brand-transformation, section#sunnyside-culture article#highlight {
+    margin: unset;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 2rem;
+  }
+  section#sunnyside-culture article#brand-transformation h2, section#sunnyside-culture article#highlight h2 {
+    font-size: 2rem;
+  }
+  section#sunnyside-culture article#graphic-design .article-text, section#sunnyside-culture article#photography .article-text {
+    width: 100%;
+    top: 65%;
+    padding: 0 1rem;
+  }
 }
 
 section#client-testimonials {
@@ -168,6 +202,27 @@ section#client-testimonials .testimonial .client-info_name {
 section#client-testimonials .testimonial .client-info_position {
   color: #a7abae;
 }
+@media screen and (max-width: 800px) {
+  section#client-testimonials {
+    height: auto;
+    padding: 3rem 2.5rem 5rem;
+  }
+  section#client-testimonials h2 {
+    font-size: 1rem;
+    margin-bottom: 4rem;
+  }
+  section#client-testimonials .testimonials-container {
+    grid-auto-flow: row;
+    width: 100%;
+    gap: 4rem;
+  }
+  section#client-testimonials .testimonial img {
+    margin-bottom: 1rem;
+  }
+  section#client-testimonials .testimonial .client-info {
+    margin-top: 1rem;
+  }
+}
 
 section#pictures {
   width: 100%;
@@ -177,6 +232,11 @@ section#pictures {
 section#pictures img {
   width: 100%;
   height: auto;
+}
+@media screen and (max-width: 800px) {
+  section#pictures {
+    grid-template-columns: repeat(2, 50%);
+  }
 }
 
 footer {
