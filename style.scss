@@ -108,9 +108,24 @@ div.intro {
         top: 20%;
         width: 100%;
         text-align: center;
+        &:after {
+            content: '';
+            background-image: url('/images/icon-arrow-down.svg');
+            position: absolute;
+            display: block;
+            top: 250%;
+            left: 50%;
+            transform: translateX(-50%);
+            margin: auto;
+            width: 36px;
+            height: 114px;
+        }
         @media screen and (max-width: 800px) {
             font-size: 2.5rem;
             top: 25%;
+            h1:after {
+                top: 150%;
+            }
         }
     }
 }
@@ -212,11 +227,12 @@ section#sunnyside-culture {
 section#client-testimonials {
     display: grid;
     place-items: center;
-    height: 100vh;
+    padding: 8rem 0;
     h2 {
         color: $grayish-blue;
         text-transform: uppercase;
         letter-spacing: .3rem;
+        margin-bottom: 6rem;
     }
     .testimonials-container {
         display: grid;

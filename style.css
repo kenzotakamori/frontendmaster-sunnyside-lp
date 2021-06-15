@@ -98,10 +98,25 @@ div.intro h1 {
   width: 100%;
   text-align: center;
 }
+div.intro h1:after {
+  content: "";
+  background-image: url("/images/icon-arrow-down.svg");
+  position: absolute;
+  display: block;
+  top: 250%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: auto;
+  width: 36px;
+  height: 114px;
+}
 @media screen and (max-width: 800px) {
   div.intro h1 {
     font-size: 2.5rem;
     top: 25%;
+  }
+  div.intro h1 h1:after {
+    top: 150%;
   }
 }
 
@@ -199,12 +214,13 @@ section#sunnyside-culture article#photography {
 section#client-testimonials {
   display: grid;
   place-items: center;
-  height: 100vh;
+  padding: 8rem 0;
 }
 section#client-testimonials h2 {
   color: #a7abae;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
+  margin-bottom: 6rem;
 }
 section#client-testimonials .testimonials-container {
   display: grid;
