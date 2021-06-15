@@ -179,4 +179,28 @@ section#pictures img {
   height: auto;
 }
 
+footer {
+  background-color: #458c7e;
+  color: #25564b;
+  display: grid;
+  place-items: center;
+}
+footer > img {
+  margin: 4rem 0;
+  width: 10rem;
+}
+footer nav {
+  display: flex;
+  gap: 3rem;
+}
+footer nav a {
+  color: #25564b;
+  text-decoration: none;
+}
+footer .contact-icons {
+  margin: 4rem 0;
+  display: flex;
+  gap: 2rem;
+}
+
 /*# sourceMappingURL=style.css.map */

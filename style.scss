@@ -194,3 +194,27 @@ section#pictures {
         height: auto;
     }
 }
+
+footer {
+    background-color: $dark-moderate-cyan;
+    color: $dark-desaturated-cyan;
+    display: grid;
+    place-items: center;
+    & > img {
+        margin: 4rem 0;
+        width: 10rem;
+    }
+    nav {
+        display: flex;
+        gap: 3rem;
+        a {
+            color: $dark-desaturated-cyan;
+            text-decoration: none;
+        }
+    }
+    .contact-icons {
+        margin: 4rem 0;
+        display: flex;
+        gap: 2rem;
+    }
+}
